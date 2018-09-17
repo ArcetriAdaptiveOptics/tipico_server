@@ -1,0 +1,3 @@
+recursive-include test *
+recursive-include tipico_server/conf *
+recursive-include tipico_server/calib *
