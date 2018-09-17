@@ -1,12 +1,11 @@
-# TIPICO SERVER: Test Inutile per Provare Inutilmente pliCO
+# TIPICO server: Test Inutile per Provare Inutilmente pliCO
 
 
 | [![Build Status][travis]][travislink] | [![Coverage Status][coveralls]][coverallslink] | 
 
 tipico is a useless application to test the [plico][plico] environment.
 
-
-See [tipico][tipico] for installation and usage
+This repository contains the server package.  See [tipico][tipico] for installation and usage
 
 
 [plico]: https://github.com/lbusoni/plico
