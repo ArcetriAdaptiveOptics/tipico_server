@@ -14,6 +14,6 @@ This repository contains the server package.  See [tipico][tipico] for installat
 [travislink]: https://travis-ci.com/lbusoni/tipico_server
 [coveralls]: https://coveralls.io/repos/github/lbusoni/tipico_server/badge.svg?branch=master "go to coveralls"
 [coverallslink]: https://coveralls.io/github/lbusoni/tipico_server
-[pypiversion]: https://badge.fury.io/py/tipico_server.svg
+[pypiversion]: https://badge.fury.io/py/tipico-server.svg
 [pypiversionlink]: https://badge.fury.io/py/tipico_server
 
