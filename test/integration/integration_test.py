@@ -20,9 +20,9 @@ from tipico_server.instrument_controller.runner import Runner
 from tipico_server.process_monitor.runner import Runner as ProcessMonitorRunner
 from tipico.client.instrument_client import \
     InstrumentClient
+import sys
 
 
-__version__ = "$Id: integration_test.py 33 2018-01-27 15:03:11Z lbusoni $"
 
 
 class IntegrationTest(unittest.TestCase):
@@ -100,6 +100,7 @@ class IntegrationTest(unittest.TestCase):
             [psh.processProcessMonitorStartUpScriptPath(),
              self.CONF_FILE,
              self.CONF_SECTION],
+            executable=sys.executable,
             stdout=serverLog, stderr=serverLog)
         Poller(5).check(MessageInFileProbe(
             ProcessMonitorRunner.RUNNING_MESSAGE, self.SERVER_LOG_PATH))
