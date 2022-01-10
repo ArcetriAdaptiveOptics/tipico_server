@@ -97,10 +97,10 @@ class IntegrationTest(unittest.TestCase):
         psh= ProcessStartUpHelper()
         serverLog= open(os.path.join(self.LOG_DIR, "server.out"), "wb")
         self.server= subprocess.Popen(
-            [psh.processProcessMonitorStartUpScriptPath(),
+            [sys.executable,
+             psh.processProcessMonitorStartUpScriptPath(),
              self.CONF_FILE,
              self.CONF_SECTION],
-            executable=sys.executable,
             stdout=serverLog, stderr=serverLog)
         Poller(5).check(MessageInFileProbe(
             ProcessMonitorRunner.RUNNING_MESSAGE, self.SERVER_LOG_PATH))
