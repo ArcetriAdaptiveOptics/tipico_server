@@ -5,11 +5,11 @@ name: Python package
 
 on:
   push:
-    branches: [ '*' ]
+    branches: [ master ]
   pull_request:
-    branches: [ '*' ]
+    branches: [ master ]
   schedule:
-    - cron: "41 4 * * *"
+    - cron: "41 5 * * 0"
 
 
 jobs:
